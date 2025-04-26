@@ -8,7 +8,10 @@ public class PraticandoFrase {
         JOptionPane.showMessageDialog(null,frase);
         JOptionPane.showMessageDialog(null,frase.length());
         JOptionPane.showMessageDialog(null,frase.toUpperCase());
-        String palavra1 = JOptionPane.showInputDialog("Digite uma frase existente na frase");
+        String palavra1 = JOptionPane.showInputDialog("Digite uma palavra existente na frase");
         String palavra2 = JOptionPane.showInputDialog("Digite uma nova palavra");
+        JOptionPane.showMessageDialog(null, frase.replace(palavra1,palavra2));
+        String fraseMod = frase.replace(palavra1,palavra2);
+        JOptionPane.showMessageDialog(null,fraseMod.length());
     }
 }
